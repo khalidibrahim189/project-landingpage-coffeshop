@@ -8,7 +8,7 @@ body{
 .main{
     max-width: 375px;
     height: 100%;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     box-sizing: border-box;
     padding: 20px;
     position: relative;
@@ -52,7 +52,8 @@ body{
 .btn-sign,
 .icon-toggle,
 .bar h4,
-.icon-close{
+.icon-close,
+#toggle2{
 cursor: pointer;
 }
 
@@ -195,11 +196,13 @@ h1.title-swift{
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
+    display: none;
 }
 
 .swift-bar{
+    /* display: none; */
     background-color: #fff !important;
-    height: 60%;
+    height: 67%;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -207,7 +210,29 @@ h1.title-swift{
     border-top-right-radius: 20px;
     padding: 20px;
 }
+.swift-bar h2{
+    font-size: 13px;
+}
+.swift-bar h1{
+    font-size: 15px;
+}
+.swift-bar .harga{
+    font-size: 11px;
+}
 
-.swift-bar .cart{
-    font-size: 14px;
+@media  (max-width: 360px) {
+    h1.sambutan{
+        font-size: 25px;
+    }
+    .swift-bar{
+        /* display: none; */
+        background-color: #fff !important;
+        height: 76%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+    }
 }
